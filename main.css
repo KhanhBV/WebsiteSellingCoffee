@@ -1,0 +1,687 @@
+*,html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#top{
+    padding-bottom: 20px;
+}
+#img_background {
+    /* float: left; */
+    height: 800px;
+    position: relative;
+    /* margin-top: 100px; */
+}
+#img_background > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-duration: 20s;
+    animation-name: change_img;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}   
+#img_background img:nth-child(1){
+    animation-delay: 0s;
+}
+#img_background img:nth-child(2){
+    animation-delay: 4s;
+}
+#img_background img:nth-child(3){
+    animation-delay: 8s;
+}
+#img_background img:nth-child(4){
+    animation-delay: 12s;
+}
+#img_background img:nth-child(5){
+    animation-delay: 16s;
+}
+@keyframes change_img {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+
+#img_background div span{
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal normal normal 45px/1.4em;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 45px;
+    line-height: 1.4em;
+    font-family: 'Sacramento', cursive;
+    color: white;
+}
+#img_background div h1 {
+    color: white;
+    font-size: 100px;
+}
+#img_background div {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+}
+ul {
+    list-style: none;
+}
+#logo a {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 36px;
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+#logo a span {
+    font-size: 15px;
+    margin-top: 0px;
+}
+.menu{
+    color: #865;
+    background-color: white;
+}
+.menu > li > input {
+    width: 250px;
+    height: 30px;
+}
+#search {
+    position: relative;
+    margin-right: 20px;
+}
+#search > a >i {
+    color: #865;
+    position: absolute;
+    left: 92%;  
+    top: 16px;
+}
+.menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+ul.menu a{
+    text-decoration: none;
+    color: #865;
+    display: inline-block;
+}
+.menu > li {
+    float: left;
+    margin-right: 55px;
+    margin-left: 55px;
+    margin-top: 15px;
+    position: relative;
+    
+}
+.menu > li > a {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.dropdown-menu {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    border-top: 0;
+    z-index: 10000;
+    transition: all 0.5s;
+    width: 600px;
+    left: -200px; 
+    background-color: white;
+}
+.dropdown-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#u1, #u2, #u3 {
+    float: left;
+    width: 33%;
+}
+
+.dropdown-content li {
+    white-space: nowrap; 
+    /* cau lenh nay de khong bi xuong dog */
+
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+.dropdown-content li a{
+    transition: all 0.5s;
+}
+
+.dropdown-content li a:hover {
+    transform: translateY(-3px);
+    color: green;
+}
+.dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+.format_for_index::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.format_for_index, .format_for_index1{
+    font-family: 'Enriqueta', serif;
+    color: #865; 
+    height: 700px;
+    position: relative;
+}
+
+.format_for_index > img {
+    margin-top: 70px;
+    /* -webkit-filter: blur(5px); */
+    margin-left: 100px;  
+    height: 530px;
+    width:  600px;
+    margin-right: 100px;
+    position: absolute;
+    overflow: hidden;
+    transition: all 3s;
+}
+.format_for_index1 > img {
+    margin-top: 70px;
+    /* -webkit-filter: blur(5px); */
+    margin-left: 100px;  
+    height: 530px;
+    width:  600px;
+    margin-right: 100px;
+    position: absolute;
+    left: 700px;
+    overflow: hidden;
+    transition: all 3s;
+}
+.format_for_index1 > img:hover, .format_for_index > img:hover  {
+
+    transform: scale(1.05);
+}
+.format_for_index1 > p {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-top: 70px;
+    line-height: 35px;
+    width: 30%;
+    position: absolute;
+    left: 0;
+   
+}
+
+.format_for_index > p {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-top: 70px;
+    line-height: 35px;
+    width: 30%;
+    position: absolute;
+    left: 700px;
+   
+}
+.format_for_index > p > span:first-child, .format_for_index1 > p > span:first-child {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+.format_for_index > p > .sp2, .format_for_index1 > p > .sp2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.bg_img1 {
+    background-image: url(images/beard-coffee-cup-925786.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    width: 100%;;
+}
+
+footer#index_footer {
+    background-color: #321;
+    height: 120px;
+    color: white;
+}
+#input_email {
+    margin-left: 270px;   
+    float: left;
+}
+#icons {
+    padding-top: 30px;
+    margin-right: 400px;
+}
+#icons i {
+    width: 100%;
+    height: 100%;
+    
+}
+#icons a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    float: right;
+    transition: all 0.5s;
+    width: 20px;
+    height: 20px; 
+}
+#icons a:hover, footer#contact_footer #contact_flow_us i:hover {
+    transform: translateY(-3px);
+    color: rgb(69, 69, 158);
+}
+
+#input_email > p {
+    font-size: 20px;
+    line-height: 0;
+    padding-top: 20px;
+}
+#input_email > input {
+    display: block;
+    height: 30px;
+    width: 300px;
+    border: 3px solid white;
+    margin-top: 10px;
+}
+#input_email > button {
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------- */
+/* contact */
+#contact_img{
+    width: 100%;
+    height: 500px;
+    
+}
+#contact_img img {
+    height: 100%;
+    width: 100%;
+
+}
+#map{
+    width: 40%;
+    height: 500px;
+    
+    /* margin-left: 15%; */
+    float: left;
+}
+#location_phone{
+    height: 100px;
+    width: 100%;
+
+}
+#location {
+    float: left;
+    height: 100px;
+    width: 50%;
+
+}
+#location p {
+    color: #865;
+    font-style: italic;
+}
+#location p:first-child {
+    font-weight: bold;
+    color: black; 
+}
+#phone {
+    float: left;
+    height: 100px;
+    width: 50%;
+    color: #321;
+}
+#location_phone::after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* #map_img {
+    height: 350px;
+    width: 200px;
+
+} */
+#contact_us {
+    width: 50%;
+    float: left;
+    margin-left: 10px;
+}
+#map-input {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+#map-input::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#contact_us {
+    margin-left: 50px;
+}
+#contact_us p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+#contact_us input {
+    width: 80%;
+    margin-bottom: 60px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+#contact_us input:nth-child(8) {
+    height: 150px;
+}
+#contact_us input:last-child:hover {
+    width: 25%;
+    background-color: #600;
+    color: white;
+    font-weight: bold;
+}
+#contact_us input:last-child {
+    width: 25%;
+    background-color: white;
+    color: #600;
+    cursor: pointer;
+}
+#contact_us i{
+    position: relative;
+    left: -30px;
+}
+#join_our {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/alcohol-bar-bottle-930406.jpg);
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#flow_our h1 {
+    margin-bottom: 20px;
+}
+#flow_our > p{
+    font-size: 20px; 
+}
+#email_send {
+    margin-top: 40px;
+
+}
+#email_send input {
+    height: 42px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+#email_send input:last-child {
+    background-color: #600;
+    width: 170px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+#email_send input:last-child:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+#email_send i {
+    position: relative;
+    left: -30px;
+    color: #600;
+}
+footer#contact_footer {
+    width: 100%;
+    height: 150px;
+    color: #600;
+    padding-top: 30px;
+}
+footer#contact_footer li {
+    float: left;
+    margin-left: 40px;
+}
+footer#contact_footer ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+footer#contact_footer #menu_last_img {
+    width: 40%;
+    margin-left: 200px;
+    float: left;
+} 
+footer#contact_footer #menu_last_img ul {
+    margin-bottom: 10px;
+}
+footer#contact_footer #contact_flow_us {
+    float: left;
+    width: 40%;
+    margin-left: 50px;
+}
+footer#contact_footer #contact_flow_us i {
+    color: #600;
+    margin-left: 30px;
+    transition: all 0.5s;
+}
+#contact_flow_us div:first-child::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#contact_flow_us div:first-child {
+    margin-bottom: 20px;
+}
+/* ----------------------------------------------------- */
+/* Menu */
+
+#menu_show_img{
+    width: 1519px;
+    height: 800px;
+    overflow:hidden; 
+    position: relative;
+}
+#menu_img{
+    position: relative;
+    height: 700px;
+    width: 500% ;
+    transition: all 1s;
+
+}
+#menu_img::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#menu_img > img{
+    width: 20%;
+    height: 100%;
+}
+#menu_img img{
+    float: left;  
+}
+#menu_show_img input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    z-index: 22;
+}
+#menu_show_img div:last-child {
+    position: absolute;
+    top: 85%;
+    left:45%;
+}
+#menu_show_img input:hover {
+    cursor: pointer;
+}
+#Menu_cakes, #Menu_coffee, #Menu_tea{
+    width: 100%;
+    height: 400px;;
+    padding-left: 100px;
+    font-family: 'Lobster', cursive;
+}
+#Menu_cakes > p , #Menu_coffee > p, #Menu_tea > p{
+    font-size: 40px;
+    color: #600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.format_menu {
+    float: left;
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    position: relative;
+    
+}
+.format_menu div h4{
+    margin-bottom: 20px;
+    
+}
+.format_menu div {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+    color: green;
+    
+}
+.format_menu_img{
+    width: 350px;
+    height: 350px;
+    transition: linear 0.5s;
+}
+.format_menu_img:hover {
+    transform: scale(1.05);
+}
+.format_menu:hover{
+    cursor: pointer;
+    /* transform: scale(1); */
+    opacity: 1;
+}
+/* .format_menu:hover div  {
+    transform: scale(1);
+    opacity: 1;
+} */
+.format_menu_p{
+    margin-top: 20px;
+    position: absolute;
+    left: 70px;
+    color: green;
+}
+.format_menu_input{
+    position: relative;
+    left: 180px;
+
+}
+#Menu_cakes img, #Menu_coffee img, #Menu_tea img{
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+
+}
+.format_menu::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#Menu_coffee, #Menu_tea {
+    margin-top: 220px;
+}
+#Menu_tea{
+    margin-bottom: 280px;
+}
+#menu_footer{
+    
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #865;
+    padding-top: 40px;
+    color: white;
+}
+#menu_footer_img {
+    width: 200px;
+    height: 60px;
+    margin-left: 130px;
+    float: left;
+    
+}
+#menu_footer_img img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+
+#menu_footer_img img:hover {
+    transform: translateY(-5px)
+}
+#menu_footer div:nth-child(2), #menu_footer div:nth-child(3), #menu_footer div:last-child  {
+    float: left;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#menu_footer div:nth-child(2):hover, #menu_footer div:nth-child(3):hover, #menu_footer div:last-child:hover {
+    color: #321;
+}
+
+
+
+
+
+
+
+
+
+
+
+

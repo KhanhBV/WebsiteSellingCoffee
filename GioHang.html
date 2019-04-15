@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-top: 50px;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-left: 130px
+        
+
+    }
+    div#giohang table{
+        width: 100%;
+        border: 1px solid gray;
+
+    }
+    div#giohang img {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+
+    }
+    .bantay{
+        cursor: pointer;
+        color: red;
+        
+        
+    }
+    div#giohang span {
+        display: block;
+        margin-left:0;
+        text-align: center
+    }
+    div#kh input{
+        margin-bottom: 10px;
+        width: 220px
+    }
+</style>
+<script src="menu.js">
+
+</script>
+<body onload="view()">
+    <!-- cac phan header tu lam -->
+    <div id="giohang">
+
+    </div>
+    <div id="kh">
+        
+            <form>
+                <input type="text" placeholder="Input Name" required="required" id="Input_name">
+                <br>
+                <input type="text" placeholder="Input number phone" required="required" id="Input_phone">
+                <br>
+                <input type="submit" value="checkout" onclick="checkFormat()" style="width: 70px; cursor: pointer;">
+            </form>
+
+            <span><a href="Menu.html" style="text-decoration: none; color: green; font-size: 20px;" >Return to menu page</a></span>
+        
+    </div>
+</body>
+</html>

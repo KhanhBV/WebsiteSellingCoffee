@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+        *,html{
+            margin: 0;
+            
+        }
+        #image img:first-child {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        #image img:last-child {
+            width: 20px;
+            height: 20px;
+        }
+        #image {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            transition: all 0.5s;
+            
+        }
+        
+    </style>
+    <script>
+        
+        var flag = true;
+        function truot(anhnho){
+          
+        if(flag==true)
+            {
+                var the=document.getElementById("image");
+                the.style.transform="translateY(180px)";
+                anhnho.style.transform="rotate(180deg)";
+                flag=false;
+            }
+        else
+            {
+                var the=document.getElementById("image");
+                the.style.transform="translateY(0px)";
+                anhnho.style.transform="rotate(0deg)";
+                flag=true;
+            }  
+        }
+        
+            
+        
+    </script>
+<body>
+    <div id="image">
+        <img src="images/1c6c813bb9d5494160041c1c4ee2fb70_XL.jpg" id="to">
+        <img src="images/12.jpg" onclick="truot(this)">
+    </div>
+</body>
+</html>
