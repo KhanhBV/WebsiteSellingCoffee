@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Menu</title>
+    <Script src="menu.js">
+
+    </Script>
+</head>
+<body onload="getdata1()">
+    <div id="top">
+
+        <ul class="menu">
+            <li id="logo">
+                <a href="index.html">BARISTA
+                    <br>
+                    <span>SPECIALITY COFFEE HOUSE</span>
+                </a>
+
+            </li>
+            <li id="search">
+                
+                    <i class="fa fa-search" onclick="search1()" style="cursor: pointer;"></i>
+                
+                <input type="text" placeholder="Keyword" id="searchP">
+
+            </li>
+            <li>
+                <a href="GioHang.html">YOUR CART </a>
+            </li>
+            <li class="dropdown-menu">
+                <a href="menu.html">MENUS</a>
+                <div class="dropdown-content">
+                        <ul id="u1">
+                                <a href="menu.html">COFFEE</a>
+                                <li>
+                                    <a href="menu.html">Phin Coffee</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">Capuchino</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">Bac Xiu</a>
+                                </li>
+                            </ul>
+                            <ul id="u2">
+                                <a href="menu.html">CAKES</a>
+                                <li>
+                                    <a href="menu.html">Cheese Cake</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">Tiramisu Cake</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">Green Tea Cheese Cake</a>
+                                </li>
+                            </ul>
+                            <ul id="u3">
+                                <a href="menu.html">TEA</a>
+                                <li>
+                                    <a href="menu.html">Lychee Tea</a></li>
+                                <li>
+                                    <a href="menu.html">Peach Lemongrass Tea</a>
+                                </li>
+                                <li>
+                                    <a href="menu.html">Orange Tea</a>
+                                </li>
+                            </ul>
+                </div>
+            </li>
+            <li>
+                <a href="AboutUs.html">ABOUT US</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+
+        </ul>
+</div> 
+<div id="menu_show_img">
+    <div id="menu_img">
+        <img src="images/77bfc6e139d531c134a67896b4445ba9.jpg">
+        <img src="images/iced-tea-tease-today-160617_158c0c72616cd8ae26dda26823753c7e.jpg" >
+        <img src="images/beans-beverage-black-coffee-373888.jpg" >
+        <img src="images/contact.jpg">
+        <img src="images/beverage-blue-breakfast-531893.jpg"> 
+    </div>
+    <div>
+        <input type="button" id="ip1" onclick="changeImg(0); changeColor(this)" style="background-color: #600">
+        <input type="button" id="ip2" onclick="changeImg(-1519); changeColor(this)">
+        <input type="button" id="ip3" onclick="changeImg(-3038); changeColor(this)">
+        <input type="button" id="ip4" onclick="changeImg(-4557); changeColor(this)">
+        <input type="button" id="ip5" onclick="changeImg(-6076); changeColor(this)">            
+    </div>
+</div>
+<div id="Menu_cakes">
+    <p>Menu Cakes</p>
+    <div id="Menu_cakes_img" >
+        <!-- <div class="format_menu" id="FLAT WHITE"> -->
+            <!-- <img src="images/12.jpg"> -->
+            <!-- <div class="cake">
+                <h4>FLAT WHITE</h4>
+                <p>A super balanced ratio from steamed milk to </p>
+                <p>espresso with a thin layer of micro-foam</p>
+                <p>0.8$</p>
+            </div> 
+            
+        </div> -->
+        <!-- <div class="format_menu" id="PLAIN CHEESECAKE">
+            <img src="images/IMG_4744.PNG.png">
+            <div class="cake">
+                <h4>PLAIN CHEESECAKE</h4>
+                <p>Plain Cheesecake comes with any of the  </p>
+                <p>available topping of strawberry, Red berry, </p>
+                <p>chocolate, caramel, Kiwi, peach, mixed berries</p>
+                <p>1.0$</p>
+            </div> 
+        </div> -->
+        <!-- <div class="format_menu" id="GREEN TEA">
+            <img src="images/matcha.jpg">
+            <div class="cake">
+                 <h4>GREEN TEA CHEESE CAKE</h4>
+                <p>A silky smooth chocolate, hand-crafted Mousse Cake</p>
+               
+                <p>made from bold Vietnamese </p>
+                <p>2.0$</p>
+                </div> 
+        </div> -->
+        
+    </div>
+</div>
+<div id="Menu_coffee">
+    <p>Menu Coffee</p>
+    <div id="Menu_coffee_img" >
+        <!-- <div class="format_menu" id="">
+            <img src="images/break-breakfast-caffeine-851559.jpg">
+            <div>
+                <h4>CAPPUCCINO</h4>
+                <p>Bold Milk Coffee! Bolder tasting than a Latte, our Cappuccino starts with  </p>
+                <p>espresso shot then we add equal amounts fresh steamed milk and hot milk foam. Also available as Iced Cappuccino.</p>
+                <p>2.2$</p>
+            </div> 
+            
+        </div>
+        <div class="format_menu" id="">
+            <img src="images/phin-coffee.jpg ">
+            <div>
+                <h4>PHIN COFFEE</h4>
+                <p>Vietnam has a rich coffee heritage and the ‘Phin’ (filter) is a key  </p>
+                <p>element in the Vietnamese way of enjoying coffee.  </p>
+                <p>Served hot or iced, with or without condensed milk/p>
+                <p>0.7$</p>
+            </div> 
+        </div>
+        <div class="format_menu" id="">
+            <img src="images/pha-che-cafe-mocha.jpg">
+            <div >
+                 <h4>MOCHA COFFEE</h4>
+                <p>A flawless mixture of Espresso, chocolate syrup and steamed milk, expertly topped with</p>
+               
+                <p>hot milk foam and more chocolate syrup. Also available as Iced Mocha. </p>
+                <p>2.0$</p>
+                </div> 
+        </div>
+         -->
+    </div>
+</div>
+<div id="Menu_tea">
+    <p>Menu Tea</p>
+    <div id="Menu_tea_img" >
+        <!-- <div class="format_menu" >
+            <img src="images/iced-tea-tease-today-160617_158c0c72616cd8ae26dda26823753c7e.jpg">
+            <div>
+                <h4>ORANGE TEA</h4>
+                <p>Another fan favorite! A refreshing blend of cooling oolong tea, luscious </p>
+                <p>lotus seeds and water chestnuts. Your choice whether to add milk or not!</p>
+                <p>1.8$</p>
+            </div> 
+            
+        </div>
+        <div class="format_menu" >
+            <img src="images/lychee-blacktea-600.jpg">
+            <div>
+                <h4>LYCHEE TEA</h4>
+                <p>A refreshing blend of black tea, whole lychee fruits and chewy golden jelly. </p>
+                
+                <p>0.7$</p>
+            </div> 
+        </div>
+        <div class="format_menu" >
+            <img src="images/Recipe-Peach-Lemon-Fusion-780x500.jpg">
+            <div >
+                 <h4>PEACH LEMONGRASS TEA</h4>
+                <p>Delightfully refreshing! The perfect balance of premium tea,</p>
+               
+                <p>subtle lemongrass and sweet juicy peaches. </p>
+                <p>1.5$</p>
+                </div> 
+        </div>
+         -->
+    </div>
+</div>
+</body>
+<footer id="menu_footer">
+    <div id="menu_footer_img">
+        <img src="images/images.jpg">
+        <img src="images/twitter.jpg">
+        <img src="images/facebook-770688_960_720.png">
+        <img src="images/instagram-1581266_960_720.jpg">
+    </div>
+    <div >
+        
+        © 2018 Highlands Coffee. All rights reserved
+    </div>
+    <div>
+            <i class="fa fa-paper-plane"></i>
+
+
+            Sign up for our newsletter
+    </div>
+    <div>
+            <i class="fa fa-envelope"></i>
+            customerservice@baristascoffee.com.vn
+    </div>
+</footer>
+</html>
